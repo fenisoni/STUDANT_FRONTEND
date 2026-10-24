@@ -6,8 +6,8 @@ export default function PortalSwitcher({ currentPortal = "student" }) {
   const dropdownRef = useRef(null);
 
   const isLocal = typeof window !== "undefined" && (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1");
-  const backendDocsUrl = isLocal ? "http://127.0.0.1:8000/docs" : "https://silver-oak-university-ai-student-help.onrender.com/docs";
-  const backendHealthUrl = isLocal ? "http://127.0.0.1:8000/api/health" : "https://silver-oak-university-ai-student-help.onrender.com/api/health";
+  const backendDocsUrl = isLocal ? "http://127.0.0.1:8000/docs" : "https://studant-backhand.onrender.com/docs";
+  const backendHealthUrl = isLocal ? "http://127.0.0.1:8000/api/health" : "https://studant-backhand.onrender.com/api/health";
 
   const portals = [
     {

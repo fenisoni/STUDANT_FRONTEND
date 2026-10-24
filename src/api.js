@@ -1,4 +1,4 @@
-const PROD_RENDER_URL = "https://silver-oak-university-ai-student-help.onrender.com";
+const PROD_RENDER_URL = "https://studant-backhand.onrender.com";
 const isLocal = typeof window !== "undefined" && (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1");
 const RAW_URL = import.meta.env.VITE_API_URL || (isLocal ? "" : PROD_RENDER_URL);
 export const API_BASE = RAW_URL ? `${RAW_URL.replace(/\/$/, "")}/api` : "/api";
